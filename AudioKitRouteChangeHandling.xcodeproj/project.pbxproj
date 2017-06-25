@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		701CE08A1F000B8100407A9F /* AudioEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701CE0891F000B8100407A9F /* AudioEngine.swift */; };
+		701CE0901F00161A00407A9F /* AudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 708B1A271EFE7A25009C43F2 /* AudioKit.framework */; };
+		701CE0911F00161A00407A9F /* AudioKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 708B1A271EFE7A25009C43F2 /* AudioKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		701CE0961F00218900407A9F /* guitar.wav in Resources */ = {isa = PBXBuildFile; fileRef = 701CE0951F00218900407A9F /* guitar.wav */; };
 		708B1A101EFE7599009C43F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 708B1A0F1EFE7599009C43F2 /* AppDelegate.swift */; };
 		708B1A121EFE7599009C43F2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 708B1A111EFE7599009C43F2 /* ViewController.swift */; };
 		708B1A151EFE7599009C43F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 708B1A131EFE7599009C43F2 /* Main.storyboard */; };
@@ -14,14 +18,55 @@
 		708B1A1A1EFE7599009C43F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 708B1A181EFE7599009C43F2 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		701CE0921F00161A00407A9F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 708B1A221EFE7A25009C43F2 /* AudioKit For iOS.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = C42F34FF1C057E03000E937C;
+			remoteInfo = AudioKit;
+		};
+		708B1A261EFE7A25009C43F2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 708B1A221EFE7A25009C43F2 /* AudioKit For iOS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C42F35001C057E03000E937C;
+			remoteInfo = AudioKit;
+		};
+		708B1A281EFE7A5D009C43F2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 708B1A221EFE7A25009C43F2 /* AudioKit For iOS.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = C42F34FF1C057E03000E937C;
+			remoteInfo = AudioKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		701CE0941F00161A00407A9F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				701CE0911F00161A00407A9F /* AudioKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		708B1A0C1EFE7599009C43F2 /* AudioKitRouting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AudioKitRouting.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		701CE0891F000B8100407A9F /* AudioEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioEngine.swift; sourceTree = "<group>"; };
+		701CE0951F00218900407A9F /* guitar.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = guitar.wav; path = Resources/guitar.wav; sourceTree = "<group>"; };
+		708B1A0C1EFE7599009C43F2 /* AudioKitRouteChangeHandling.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AudioKitRouteChangeHandling.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		708B1A0F1EFE7599009C43F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		708B1A111EFE7599009C43F2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		708B1A141EFE7599009C43F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		708B1A161EFE7599009C43F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		708B1A191EFE7599009C43F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		708B1A1B1EFE7599009C43F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		708B1A221EFE7A25009C43F2 /* AudioKit For iOS.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "AudioKit For iOS.xcodeproj"; path = "AudioKit/AudioKit/iOS/AudioKit For iOS.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,15 +74,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				701CE0901F00161A00407A9F /* AudioKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		701CE08D1F00126400407A9F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				701CE0951F00218900407A9F /* guitar.wav */,
+				708B1A131EFE7599009C43F2 /* Main.storyboard */,
+				708B1A181EFE7599009C43F2 /* LaunchScreen.storyboard */,
+				708B1A161EFE7599009C43F2 /* Assets.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		701CE08F1F00127E00407A9F /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				701CE0891F000B8100407A9F /* AudioEngine.swift */,
+			);
+			name = Audio;
+			sourceTree = "<group>";
+		};
 		708B1A031EFE7598009C43F2 = {
 			isa = PBXGroup;
 			children = (
+				708B1A221EFE7A25009C43F2 /* AudioKit For iOS.xcodeproj */,
 				708B1A0E1EFE7599009C43F2 /* AudioKitRouting */,
 				708B1A0D1EFE7599009C43F2 /* Products */,
 			);
@@ -46,7 +112,7 @@
 		708B1A0D1EFE7599009C43F2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				708B1A0C1EFE7599009C43F2 /* AudioKitRouting.app */,
+				708B1A0C1EFE7599009C43F2 /* AudioKitRouteChangeHandling.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,34 +120,44 @@
 		708B1A0E1EFE7599009C43F2 /* AudioKitRouting */ = {
 			isa = PBXGroup;
 			children = (
+				701CE08F1F00127E00407A9F /* Audio */,
+				701CE08D1F00126400407A9F /* Resources */,
 				708B1A0F1EFE7599009C43F2 /* AppDelegate.swift */,
 				708B1A111EFE7599009C43F2 /* ViewController.swift */,
-				708B1A131EFE7599009C43F2 /* Main.storyboard */,
-				708B1A161EFE7599009C43F2 /* Assets.xcassets */,
-				708B1A181EFE7599009C43F2 /* LaunchScreen.storyboard */,
 				708B1A1B1EFE7599009C43F2 /* Info.plist */,
 			);
 			path = AudioKitRouting;
 			sourceTree = "<group>";
 		};
+		708B1A231EFE7A25009C43F2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				708B1A271EFE7A25009C43F2 /* AudioKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		708B1A0B1EFE7599009C43F2 /* AudioKitRouting */ = {
+		708B1A0B1EFE7599009C43F2 /* AudioKitRouteChangeHandling */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 708B1A1E1EFE7599009C43F2 /* Build configuration list for PBXNativeTarget "AudioKitRouting" */;
+			buildConfigurationList = 708B1A1E1EFE7599009C43F2 /* Build configuration list for PBXNativeTarget "AudioKitRouteChangeHandling" */;
 			buildPhases = (
 				708B1A081EFE7599009C43F2 /* Sources */,
 				708B1A091EFE7599009C43F2 /* Frameworks */,
 				708B1A0A1EFE7599009C43F2 /* Resources */,
+				701CE0941F00161A00407A9F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				708B1A291EFE7A5D009C43F2 /* PBXTargetDependency */,
+				701CE0931F00161A00407A9F /* PBXTargetDependency */,
 			);
-			name = AudioKitRouting;
+			name = AudioKitRouteChangeHandling;
 			productName = AudioKitRouting;
-			productReference = 708B1A0C1EFE7599009C43F2 /* AudioKitRouting.app */;
+			productReference = 708B1A0C1EFE7599009C43F2 /* AudioKitRouteChangeHandling.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -101,7 +177,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 708B1A071EFE7598009C43F2 /* Build configuration list for PBXProject "AudioKitRouting" */;
+			buildConfigurationList = 708B1A071EFE7598009C43F2 /* Build configuration list for PBXProject "AudioKitRouteChangeHandling" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -112,12 +188,28 @@
 			mainGroup = 708B1A031EFE7598009C43F2;
 			productRefGroup = 708B1A0D1EFE7599009C43F2 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 708B1A231EFE7A25009C43F2 /* Products */;
+					ProjectRef = 708B1A221EFE7A25009C43F2 /* AudioKit For iOS.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
-				708B1A0B1EFE7599009C43F2 /* AudioKitRouting */,
+				708B1A0B1EFE7599009C43F2 /* AudioKitRouteChangeHandling */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		708B1A271EFE7A25009C43F2 /* AudioKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = AudioKit.framework;
+			remoteRef = 708B1A261EFE7A25009C43F2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		708B1A0A1EFE7599009C43F2 /* Resources */ = {
@@ -126,6 +218,7 @@
 			files = (
 				708B1A1A1EFE7599009C43F2 /* LaunchScreen.storyboard in Resources */,
 				708B1A171EFE7599009C43F2 /* Assets.xcassets in Resources */,
+				701CE0961F00218900407A9F /* guitar.wav in Resources */,
 				708B1A151EFE7599009C43F2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,12 +230,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				701CE08A1F000B8100407A9F /* AudioEngine.swift in Sources */,
 				708B1A121EFE7599009C43F2 /* ViewController.swift in Sources */,
 				708B1A101EFE7599009C43F2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		701CE0931F00161A00407A9F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AudioKit;
+			targetProxy = 701CE0921F00161A00407A9F /* PBXContainerItemProxy */;
+		};
+		708B1A291EFE7A5D009C43F2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AudioKit;
+			targetProxy = 708B1A281EFE7A5D009C43F2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		708B1A131EFE7599009C43F2 /* Main.storyboard */ = {
@@ -258,11 +365,12 @@
 		708B1A1F1EFE7599009C43F2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7P8M7ZUJ37;
 				INFOPLIST_FILE = AudioKitRouting/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = co.karasik.AudioKitRouting;
+				PRODUCT_BUNDLE_IDENTIFIER = co.karasik.AudioKitRouteChangeHandling;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -271,11 +379,12 @@
 		708B1A201EFE7599009C43F2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7P8M7ZUJ37;
 				INFOPLIST_FILE = AudioKitRouting/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = co.karasik.AudioKitRouting;
+				PRODUCT_BUNDLE_IDENTIFIER = co.karasik.AudioKitRouteChangeHandling;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -284,7 +393,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		708B1A071EFE7598009C43F2 /* Build configuration list for PBXProject "AudioKitRouting" */ = {
+		708B1A071EFE7598009C43F2 /* Build configuration list for PBXProject "AudioKitRouteChangeHandling" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				708B1A1C1EFE7599009C43F2 /* Debug */,
@@ -293,13 +402,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		708B1A1E1EFE7599009C43F2 /* Build configuration list for PBXNativeTarget "AudioKitRouting" */ = {
+		708B1A1E1EFE7599009C43F2 /* Build configuration list for PBXNativeTarget "AudioKitRouteChangeHandling" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				708B1A1F1EFE7599009C43F2 /* Debug */,
 				708B1A201EFE7599009C43F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
