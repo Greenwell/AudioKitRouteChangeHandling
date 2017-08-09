@@ -37,7 +37,8 @@ class AudioEngine {
         AudioKit.stop()
         
         AKSettings.defaultToSpeaker = true
-        AKSettings.disableRouteChangeHandling = true
+        AKSettings.enableRouteChangeHandling = true
+        AKSettings.playbackWhileMuted = true
         
         do {
             try AKSettings.setSession(category: .playAndRecord, with: [.defaultToSpeaker, .allowBluetooth, .allowBluetoothA2DP])
